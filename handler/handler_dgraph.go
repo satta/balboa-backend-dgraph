@@ -95,7 +95,6 @@ func (d *DgraphHandler) handleChunk(chunk []*observation.InputObservation) {
 	txn := d.Client.NewTxn()
 	ctx := context.Background()
 
-	// query for observations by their
 	i := 0
 	ohashesIn := make([]string, maxChunk)
 	for _, obs := range chunk {
